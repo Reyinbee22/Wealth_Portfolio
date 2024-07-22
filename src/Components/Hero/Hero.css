@@ -1,34 +1,39 @@
-.hero{
+/* Base styles for .hero section */
+.hero {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 35px;
-
 }
+
 .hero img {
     margin-top: 150px;
     border-radius: 50px;
     border: 4px solid black;
 }
-.hero h1{
+
+.hero h1 {
     text-align: center;
     width: 70%;
     font-size: 90px;
     font-weight: 600;
 }
-.hero h1 span{
+
+.hero h1 span {
     background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.hero p{
+
+.hero p {
     width: 50%;
     text-align: center;
     font-size: 24px;
     line-height: 40px;
 }
-.hero-action{
+
+.hero-action {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -36,25 +41,129 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
+
 .hero-connect {
     padding: 25px 45px;
     border-radius: 50px;
     background: linear-gradient(264deg, #df8908, #b415ff);
     cursor: pointer;
-    border: 2px solid transparent; 
+    border: 2px solid transparent;
     color: white;
 }
 
-.hero-resume{
+.hero-resume {
     padding: 25px 75px;
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
 }
-.hero-connect:hover{
-    border: 2px solid white;
 
+.hero-connect:hover {
+    border: 2px solid white;
 }
-.hero-resume:hover{
+
+.hero-resume:hover {
     border-color: #b415ff;
+}
+
+/* Media Queries */
+
+/* Small screens (phones and small tablets) */
+@media (max-width: 800px) {
+    .hero {
+        gap: 20px;
+    }
+    
+    .hero img {
+        margin-top: 100px;
+        width: 80%;
+    }
+    
+    .hero h1 {
+        width: 90%;
+        font-size: 60px;
+    }
+    
+    .hero p {
+        width: 90%;
+        font-size: 18px;
+    }
+    
+    .hero-action {
+        gap: 15px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-connect, .hero-resume {
+        padding: 20px 40px;
+    }
+    
+    .hero-resume {
+        border-width: 1px;
+    }
+}
+
+/* Medium screens (tablets and small desktops) */
+@media (min-width: 801px) and (max-width: 1200px) {
+    .hero {
+        gap: 30px;
+    }
+    
+    .hero img {
+        margin-top: 130px;
+        width: 70%;
+    }
+    
+    .hero h1 {
+        width: 80%;
+        font-size: 75px;
+    }
+    
+    .hero p {
+        width: 70%;
+        font-size: 20px;
+    }
+    
+    .hero-action {
+        gap: 20px;
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    
+    .hero-connect, .hero-resume {
+        padding: 22px 50px;
+    }
+}
+
+/* Large screens (desktops and larger monitors) */
+@media (min-width: 1201px) {
+    .hero {
+        gap: 35px;
+    }
+    
+    .hero img {
+        margin-top: 150px;
+        width: auto; /* or specify width if needed */
+    }
+    
+    .hero h1 {
+        width: 70%;
+        font-size: 90px;
+    }
+    
+    .hero p {
+        width: 50%;
+        font-size: 24px;
+    }
+    
+    .hero-action {
+        gap: 25px;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    
+    .hero-connect, .hero-resume {
+        padding: 25px 45px;
+    }
 }

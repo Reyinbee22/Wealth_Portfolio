@@ -4,13 +4,20 @@ import './Navbar.css';
 import logo from '../../assets/logo.svg';
 import underline from '../../assets/nav_underline.svg';
 
-const Navbar = ({ handleConnectClick }) => {
+const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   const handleMenuItemClick = (section) => {
     setMenu(section);
     // Smooth scroll to the corresponding section
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+  };
+
+  // WhatsApp link
+  const whatsappLink = "https://wa.me/qr/MWES4MZCAGGQA1"; 
+
+  const handleConnectClick = () => {
+    window.open(whatsappLink, '_blank');
   };
 
   return (
@@ -56,5 +63,3 @@ const Navbar = ({ handleConnectClick }) => {
 };
 
 export default Navbar;
-
-
