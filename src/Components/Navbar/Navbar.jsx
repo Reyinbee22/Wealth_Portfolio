@@ -13,11 +13,11 @@ const Navbar = () => {
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
   };
 
-  // WhatsApp link
-  const whatsappLink = "https://wa.me/qr/MWES4MZCAGGQA1"; 
+  // LinkedIn link
+  const linkedinLink = "https://www.linkedin.com/in/wealthbassey/"; 
 
   const handleConnectClick = () => {
-    window.open(whatsappLink, '_blank');
+    window.open(linkedinLink, '_blank');
   };
 
   return (
